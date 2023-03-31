@@ -13,7 +13,7 @@ class CreateStudentinfoTable extends Migration
      */
     public function up()
     {
-        Schema::create('studentinfo', function (Blueprint $table) {
+        Schema::create('studentInfo', function (Blueprint $table) {
             $table->id('sno');
             $table->string('idNo', 8);
             $table->string('firstName', 20);
@@ -22,7 +22,7 @@ class CreateStudentinfoTable extends Migration
             $table->string('suffix', 5)->nullable();
             $table->string('course', 15);
             $table->smallinteger('year');
-            $table->date('birthday', 20);
+            $table->date('birthdate', 20);
             $table->string('gender', 6);
             $table->timestamps();
         });
